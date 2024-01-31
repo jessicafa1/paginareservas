@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Slider de Fotos</title>
+    <style>
+        #slider {
+            width: 900px;
+            margin: auto;
+            overflow: hidden;
+            
+            padding-top: 250px;
+            position: relative;
+            display: flex;
+            align-items: center; /* Centra verticalmente */
+            justify-content: center; /* Centra horizontalmente */
+        }
+    
+        #slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            align-items: center; /* Alinea los slides verticalmente */
+        }
+    
+        .slide {
+            min-width: 100%;
+            text-align: center; /* Alinea el contenido del slide en el centro */
+        }
+    
+        img {
+            max-width: 100%; /* Asegura que la imagen no se salga del slide */
+            height: auto;
+        }
+    
+       
+    
+     
+    </style>
+    
+</head>
+
+<body>
+
+    <div id="slider">
+        <div id="slides">
+            <div class="slide">
+                <img width="700px" src="imagenes/Recurso 2.png" alt="Imagen 1">
+            </div>
+            <div class="slide">
+                <img  width="700px" src="imagenes/Recurso 2.png" alt="Imagen 2">
+            </div>
+            <div class="slide">
+                <img  width="700px" src="imagenes/Recurso 2.png" alt="Imagen 3">
+            </div>
+            <!-- Agrega más slides según sea necesario -->
+        </div>
+      
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        const intervalTime = 3000; // Cambio automático cada 3 segundos
+
+        function showSlide(index) {
+            if (index >= totalSlides) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = totalSlides - 1;
+            } else {
+                currentSlide = index;
+            }
+
+            const newTransformValue = -currentSlide * 100 + '%';
+            document.getElementById('slides').style.transform = 'translateX(' + newTransformValue + ')';
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        setInterval(nextSlide, intervalTime);
+    </script>
+
+</body>
+
+</html>

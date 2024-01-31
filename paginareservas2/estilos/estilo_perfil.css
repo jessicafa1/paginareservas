@@ -1,0 +1,172 @@
+
+
+ #contenedor_usuario {
+    border: 1px solid #ccc;
+   
+    padding: 30px;
+
+
+}
+
+/* Estilo para alinear contenido_perfil al lado de contenedor_perfil */
+#contenedor_perfil {
+    float: left;
+    width: 382px; 
+}
+
+#contenido_perfil {
+    float: right;
+    width: 600px; 
+}
+
+
+.clear {
+    clear: both;
+}
+
+#foto {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #cecece;
+    position: relative;
+}
+
+#boton_ilustracion {
+    padding: 10px;
+    background-color: #b36f32;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#foto_perfil {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(165, 165, 165);
+    border-radius: 50%; /* Hace que el div tenga forma de círculo */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centra el div en relación con su propio tamaño */
+}
+
+
+
+
+
+hr {
+    background-color: rgb(210, 210, 210);
+    height: 1px;
+    border: none;
+}
+
+.boton {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid rgb(156, 156, 156);
+    color: #969696;
+}
+
+:hover .boton {
+    background-color: #d57500;
+    border: 1px solid #d57500;
+    color: #ffffff;
+}
+
+#boton_ilustracion:hover {
+    background-color: #f9ae17;
+}
+
+#contenedor_equipo{
+    width: 1200px;
+    height:900px;
+    background-color: #f9f9f9;
+    padding: 30px;
+}
+.relleno{
+    
+    width: 300px;
+height:400px;
+background-color: #ffffff;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-left: 10px;
+
+padding: 10px;
+}
+ul.lista_perfil {
+    color: #2f2f2f;
+    line-height: 1.8em;
+    list-style-type: none;
+    padding-left: 0;
+}
+#equipo {
+    margin: 20px;
+    display: flex;
+    justify-content:center;
+    
+
+}
+
+.miembro {
+
+    width: 120px;
+    height: 120px;
+    background-color: #ffb3b3;
+    border-radius: 50%;
+
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+.miembro img {
+    width: 100%;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.miembro-info {
+    text-align: center;
+    padding: 10px;
+}
+
+h3.titulo-con-linea {
+    margin: 50px 0 50px 0;
+    color: #333;
+    text-align: center; /* Centrar horizontalmente */
+   
+    position: relative; /* Importante para posicionar el pseudoelemento de forma absoluta con respecto a este elemento */
+}
+
+.titulo-con-linea::before,
+.titulo-con-linea::after {
+    content: '';
+    position: absolute;
+    bottom: 50%; /* Ajusta la posición vertical de las líneas (50% las coloca en el medio) */
+    width: 40%; /* Ancho de cada línea (ajustar según sea necesario) */
+    height: 0.3px; /* Grosor de la línea */
+    background-color: #c9c9c9; /* Color de la línea */
+}
+
+.titulo-con-linea::before {
+    left: 0; /* Posiciona la línea a la izquierda del título */
+    transform: translateY(-50%); /* Centra verticalmente la línea */
+}
+
+.titulo-con-linea::after {
+    right: 0; /* Posiciona la línea a la derecha del título */
+    transform: translateY(-50%); /* Centra verticalmente la línea */
+}
+
+.destacado{ 
+    text-align: center;
+
+    padding: 5px;
+    color: rgb(130, 56, 0);
+}

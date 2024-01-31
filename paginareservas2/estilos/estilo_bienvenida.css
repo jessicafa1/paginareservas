@@ -1,0 +1,19 @@
+.contenedor{
+    display: flex;
+}
+
+.contenedor-texto {
+    width: 700px;
+    padding: 30px;
+    float: right;
+    border: 1px solid rgb(156, 156, 156);
+    color: #2a2a2a;
+}
+
+#imagen_bienvenida {
+  padding: 10px;
+   margin-right: 10px;
+    background-image: url(imagenes/fondo_index.png);
+    border: 1px solid rgb(156, 156, 156);
+    color: #232323;}
+

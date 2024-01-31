@@ -1,0 +1,172 @@
+/* Estilo del contenedor principal del perfil */
+
+#contenedor_usuario {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  width: 1000px;
+    height: 300px;
+
+    border-radius: 10px;
+
+    border: 1px solid #b3b3b3;
+
+    background-color: #fff;
+}
+
+/* Estilo del contenedor de la foto y botones de navegación */
+#contenedor_perfil {
+    border-bottom-left-radius: 10px; /* Redondea la esquina inferior izquierda */
+    border-top-left-radius: 10px;
+    display: flex;
+
+    height: 300px;
+    width: 200px;
+    flex-wrap: wrap;
+    border-right: 0.5px solid  #dbdbdb;;
+    justify-content: space-around;
+    align-content: space-around
+}
+#foto_perfil{
+    border: 1px solid #a6a6a6;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-image: url(multimedia/perfil2.jpg);
+    margin-left: 180px;
+    background-size: cover;
+
+}
+/* Estilo del botón de subir foto */
+#subir_foto {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-image: url(multimedia/camara.svg);
+    transition: background-color 0.3s;
+}
+
+#subir_foto:hover {
+    background-color: #898989;
+}
+
+/* Estilo del contenido del perfil */
+#contenido_perfil {
+    margin: 20px 0 0 90px;
+    float: right;
+  width: 600px;
+  color: #898989;
+  font-size: 14px;
+
+}
+
+#contenido_perfil h3 {
+    color: #525252;
+    font-size: 30px;
+}
+
+#contenido_perfil span {
+    color: #b36f32;
+    font-weight: bold;
+}
+
+.lista_perfil {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.lista_perfil li {
+    margin-bottom: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+
+.boton {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    color: #666;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.boton:hover {
+    background-color: #d57500;
+    border-color: #d57500;
+    color: #fff;
+}
+
+/* Limpiar el float para evitar problemas de diseño */
+.clear {
+    clear: both;
+}
+/* Estilo de la sección del equipo */
+#contenedor_equipo {
+    margin-top: 30px;
+    padding-top: 30px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid #b3b3b3;
+}
+
+
+
+
+#equipo {
+    display: flex;
+    
+}
+
+/* Estilo de cada miembro del equipo */
+.miembro {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.miembro img {
+    width: 100px;
+    max-width: 150px;
+    border-radius: 50%;
+   
+    border: 1px solid #b3b3b3;
+
+}
+
+.miembro h4 {
+    color: #474747;
+    margin-top: 10px;
+}
+
+.miembro hr {
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.miembro p.destacado {
+    color: #b36f32;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Estilo para el texto de descripción */
+.miembro p {
+    color: #666;
+    font-size: 14px;
+}
+.titulo{
+    margin-top: 50px;
+    margin-left: 10px;
+    color: #666;
+}

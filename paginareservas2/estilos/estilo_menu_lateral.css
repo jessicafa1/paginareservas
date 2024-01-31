@@ -1,0 +1,80 @@
+
+#lateral-izquierdo {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 200px;
+    background-color: #B36F32;
+    height: 100%;
+    padding: 30px;
+}
+.icono{ filter: invert(100%);
+width: 30px; margin-right: 10px;
+
+
+;}
+#menu-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu-lateral li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
+a { padding-top: 10px;}
+#menu-lateral {
+    background-color: #B36F32;
+    color: #3b3b3b;
+    width: 100%;
+
+
+    /* Incluye el borde en el cálculo del tamaño total */
+}
+
+#menu-lateral ul {
+  
+    margin-top: 100px;
+    list-style: none;
+  
+}
+
+#menu-lateral li {
+
+
+ height: 80px;
+
+    border-bottom: 1px solid#774921;
+
+}
+
+#menu-lateral a {
+   
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+#menu-lateral a:hover {
+    color: #ffffff;
+
+}
+
+#menu-lateral li :hover {
+    border-bottom: 1px solid #f38218;
+    padding: 10px;
+
+}
+
+.menu1{
+ margin-left: -10px;
+}
+ul{
+    padding-left: 0;
+}

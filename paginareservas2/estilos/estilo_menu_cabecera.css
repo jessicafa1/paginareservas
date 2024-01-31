@@ -1,0 +1,18 @@
+ .menu1 li{
+    display: inline-block;
+    color:white;
+    padding: 10px;
+ }
+.menu1 ul{
+    float: right;
+    margin-top: -50px;
+    list-style: none;
+}
+.menu1 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+.menu1  a:hover {
+    color: #ffba4c;}

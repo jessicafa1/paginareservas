@@ -1,0 +1,100 @@
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+h2 {
+    font-size: 20px;
+}
+
+a {
+    font-size: 15px;
+}
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+   
+    color: #b36f32;
+}
+
+.image-container {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(imagenes/fondo_index-02.png);
+ 
+    background-size: cover;
+}
+
+#responsive-image {
+    width: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+
+#login {
+
+    margin: 250px 40px 80px 200px;
+    height: 500px;
+    width: 500px;
+    padding: 80px 80px 80px 80px;
+    box-sizing: border-box;
+    border: 1px solid #b36f32;
+    border-radius: 10px;
+
+};
+label {
+    opacity: 0.7;
+    font-size: 13px;
+}
+
+/* Estilos adicionales para mejorar la apariencia del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+};
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    border-radius: 10px;
+}
+
+input.boton {
+    padding: 10px;
+    background-color: #b36f32;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+input.boton:hover {
+    background-color: #f9ae17;
+}
+
+/* Estilos para la versión responsive */
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .login-container {
+        width: 100%;
+    }
+}
